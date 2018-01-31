@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm /opt/report-engine/*
+rm -rf /opt/report-engine/*
