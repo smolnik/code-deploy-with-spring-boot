@@ -2,5 +2,5 @@
 
 report-engine=/etc/init.d/report-engine
 if [ ! -L $report-engine ]; then
-    report-engine stop
+    $report-engine stop
 fi
