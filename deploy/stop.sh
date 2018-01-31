@@ -1,6 +1,6 @@
 #!/bin/bash
 
-report-engine=/etc/init.d/report-engine
-if [ ! -L $report-engine ]; then
-    $report-engine stop
+report_engine=/etc/init.d/report-engine
+if [ ! -L $report_engine ]; then
+    $report_engine stop
 fi

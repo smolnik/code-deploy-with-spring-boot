@@ -1,7 +1,7 @@
 #!/bin/bash
 
-jarDir=/opt/report-engine/
-jarFile=$(find $jarDir -name '*.jar' -printf "%f\n" | head -1 ) 
+jar_dir=/opt/report-engine/
+jar_file=$(find $jar_dir -name '*.jar' -printf "%f\n" | head -1 ) 
 rm -f /etc/init.d/report-engine
-ln -s $jarDir$jarFile /etc/init.d/report-engine
-echo $jarDir$jarFile
+ln -s $jar_dir$jar_file /etc/init.d/report-engine
+echo $jar_dir$jar_file
