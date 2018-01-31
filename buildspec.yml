@@ -12,5 +12,6 @@ phases:
 artifacts:
   files:
     - target/report-engine-1.1.jar
+    - deploy/*
     - appspec.yml
   discard-paths: yes

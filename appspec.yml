@@ -5,16 +5,16 @@ files:
     destination: /opt/report-engine
 hooks:
   ApplicationStop:
-    - location: deploy/stop.sh
+    - location: stop.sh
       timeout: 60
   BeforeInstall:
-    - location: deploy/before_install.sh
+    - location: before_install.sh
       timeout: 60
   AfterInstall:
-    - location: deploy/after_install.sh
+    - location: after_install.sh
       timeout: 60
   ApplicationStart:
-    - location: deploy/start.sh
+    - location: start.sh
       timeout: 60
   ValidateService:
-    - location: deploy/basic_health_check.sh
+    - location: basic_health_check.sh
