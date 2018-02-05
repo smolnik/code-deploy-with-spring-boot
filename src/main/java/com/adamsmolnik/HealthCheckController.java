@@ -14,7 +14,7 @@ public class HealthCheckController {
 
 	@RequestMapping(path = "hc")
 	public String hc() {
-		return "OK... env=" + env + " " + Instant.now();
+		return "OK... :) env=" + env + " " + Instant.now();
 	}
 
 }
