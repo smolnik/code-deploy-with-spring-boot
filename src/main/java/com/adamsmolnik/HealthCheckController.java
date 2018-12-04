@@ -1,5 +1,7 @@
 package com.adamsmolnik;
 
+import java.net.Inet4Address;
+import java.net.UnknownHostException;
 import java.time.Instant;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -14,7 +16,11 @@ public class HealthCheckController {
 
 	@RequestMapping(path = "hc")
 	public String hc() {
-		return "OK...  :))))):) env=" + env + " " + Instant.now();
+		try {
+			return "Hello for + " + Inet4Address.getLocalHost() + " +  :))))):) env=" + env + " " + Instant.now();
+		} catch (UnknownHostException e) {
+			throw new IllegalStateException(e);
+		}
 	}
 
 }
