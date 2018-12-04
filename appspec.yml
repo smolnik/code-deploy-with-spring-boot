@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt/report-engine
+    destination: /opt/app
 hooks:
   ApplicationStop:
     - location: stop.sh
