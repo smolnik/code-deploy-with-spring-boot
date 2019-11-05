@@ -17,7 +17,7 @@ public class HealthCheckController {
 	@RequestMapping(path = "hc")
 	public String hc() {
 		try {
-			return "Hello Adam from + " + Inet4Address.getLocalHost().getHostAddress() + " +  :) env=" + env + " "
+			return "Hello Sir Adam from + " + Inet4Address.getLocalHost().getHostAddress() + " +  :) env=" + env + " "
 					+ Instant.now();
 		} catch (UnknownHostException e) {
 			throw new IllegalStateException(e);
