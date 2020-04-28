@@ -15,7 +15,7 @@ public class MainController {
 	@RequestMapping("/")
 	public String hc() {
 		try {
-			return "Hello here, Adam from " + Inet4Address.getLocalHost().getHostAddress() + " +  :) at " + Instant.now();
+			return "Hello here, Adam from Zory!!! " + Inet4Address.getLocalHost().getHostAddress() + " +  :) at " + Instant.now();
 		} catch (UnknownHostException e) {
 			throw new IllegalStateException(e);
 		}
