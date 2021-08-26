@@ -21,7 +21,7 @@ public class HealthCheckController {
 	public String hc() {
 		try {
 			List<String> entities = myService.getEntities();
-			return "Hello here, Adam from " + Inet4Address.getLocalHost().getHostAddress() + " :) " + Instant.now()
+			return "Hello, Adam from " + Inet4Address.getLocalHost().getHostAddress() + " :) " + Instant.now()
 					+ " entities-> " + entities;
 		} catch (UnknownHostException e) {
 			throw new IllegalStateException(e);
